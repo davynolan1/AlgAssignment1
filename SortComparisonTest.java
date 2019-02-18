@@ -183,50 +183,51 @@ public class SortComparisonTest
      *  Use this main method to create the experiments needed to answer the experimental performance questions of this assignment.
      *
      */
-//    public static void main(String[] args)
-//    {
-//    	File numbers10 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers10.txt");
-//    	File numbers100 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers100.txt");
-//    	File numbers1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers1000.txt");
-//    	File numbers1000Dup = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers1000Duplicates.txt");
-//    	File numbersNearlyOrdered1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersNearlyOrdered1000.txt");
-//    	File numbersReverse1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersReverse1000.txt");
-//    	File numbersSorted1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersSorted1000.txt");
-//    	
-//    	FileReader fileReader = null;
-//		try {
-//			fileReader = new FileReader(numbers10);
-//		} catch (FileNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}//file is read 
-//        BufferedReader bufferedReader = new BufferedReader(fileReader );
-//        String line;
-//    	ArrayList<Double> doubles = new ArrayList<Double>();
-//    	try {
-//			while ((line = bufferedReader.readLine()) != null) 
-//			{
-//			    doubles.add(Double.parseDouble(line));        
-//			}
-//		} catch (NumberFormatException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
+//  public static void main(String[] args) {
+//	File numbers10 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers10.txt");
+//	File numbers100 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers100.txt");
+//	File numbers1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers1000.txt");
+//	File numbers1000Dup = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbers1000Duplicates.txt");
+//	File numbersNearlyOrdered1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersNearlyOrdered1000.txt");
+//	File numbersReverse1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersReverse1000.txt");
+//	File numbersSorted1000 = new File("/Users/davynolan/Documents/COLLEGE DOCUMENTS/2nd Year CS/Algorithims and Data Structure/Term 2/Assignment 1/src/numbersSorted1000.txt");
+//	
+//	FileReader fileReader = null;
+//	try {
+//		fileReader = new FileReader(numbersSorted1000);
+//	} catch (FileNotFoundException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}//file is read 
+//    BufferedReader bufferedReader = new BufferedReader(fileReader );
+//    String line;
+//	ArrayList<Double> doubles = new ArrayList<Double>();
+//	try {
+//		while ((line = bufferedReader.readLine()) != null) 
+//		{
+//		    doubles.add(Double.parseDouble(line));        
 //		}
-//    	
-//    	double [] arr = null;
-//    	for(int i=0; i<doubles.size(); i++) {
-//    		arr[i] = doubles.get(i);
-//    		System.out.println(arr[i]);
-//    	}
-    	
-//    	long startTime = System.nanoTime();
-//    	methodToTime();
-//    	long endTime = System.nanoTime();
+//	} catch (NumberFormatException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	} catch (IOException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+//	
+//	double [] arr = new double [doubles.size()];
+//	for(int i = 0; i < doubles.size(); i++) {
+//		arr[i] = doubles.get(i);
+//		System.out.println(arr[i]);
+//	}
+//	
+//	long startTime = System.nanoTime();
+//	selectionSort(arr);
+//	long endTime = System.nanoTime();
 //
-//    	long duration = (endTime - startTime);  //divide by 1000000 to get milliseconds.
-//    }
+//	long duration = (endTime - startTime);  //divide by 1000000 to get milliseconds.
+//	System.out.println();
+//	System.out.println(duration);
+//}
 
 }
